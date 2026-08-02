@@ -110,8 +110,12 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 }
 .brand{ display: flex; align-items: center; gap: .75rem; margin-right: auto; }
 .brand-badge{
-  width: 52px; height: 52px; border-radius: 12px; object-fit: cover;
-  background: #fff; padding: 3px; flex-shrink: 0;
+  width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;
+  background-color: #fff;
+  background-image: url('fall-fest-hero.webp');
+  background-repeat: no-repeat;
+  background-size: 147px 83px;
+  background-position: -18px -23px;
 }
 .brand-crest{
   width: 56px; height: 56px; border-radius: 10px; object-fit: contain;
@@ -296,7 +300,8 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
   display: grid; grid-template-columns: .8fr 1.2fr; gap: 1.5rem;
   margin-top: 1.75rem; align-items: stretch;
 }
-.contact-people{ display: flex; flex-direction: column; gap: .75rem; }
+.contact-people{ display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.contact-address{ grid-column: 1 / -1; }
 .contact-card{
   border: 1px solid var(--line-2); border-radius: 14px; padding: 1.1rem 1.25rem;
   background: var(--panel);
@@ -306,7 +311,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
   color: var(--blue);
 }
 .contact-card h3{ font-size: 1rem; margin: .4rem 0 .3rem; }
-.contact-mail{ font-family: var(--mono); font-size: .85rem; color: var(--pink); word-break: break-all; }
+.contact-mail{ font-family: var(--body); font-size: .92rem; font-weight: 500; color: var(--pink); word-break: break-all; }
 .contact-mail:hover{ text-decoration: underline; }
 .contact-address p{ margin: 0; font-size: .88rem; }
 
@@ -354,6 +359,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .brand-text em{ display: none; }
   .brand-divider{ display: none; }
   .brand-badge, .brand-crest{ width: 44px; height: 44px; }
+  .brand-badge{ background-size: 124px 70px; background-position: -15px -20px; }
   .nav-links{
     position: absolute; top: 100%; left: 0; right: 0;
     background: var(--ink); border-bottom: 1px solid var(--line);
@@ -363,5 +369,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .nav-links.open{ display: flex; }
   .nav-cta{ display: none; }
   .burger{ display: flex; }
+  .contact-people{ grid-template-columns: 1fr; }
   .section-inner{ padding: 4rem 1.25rem; }
 }
