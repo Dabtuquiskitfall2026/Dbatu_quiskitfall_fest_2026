@@ -218,6 +218,25 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 .two-col{ display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .col h2{ font-size: 1.5rem; }
 
+.col-host{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 340px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  background: url("dbatu-campus.jpg") center / cover no-repeat;
+}
+.col-host-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,8,20,.35) 0%, rgba(10,8,20,.85) 75%, rgba(10,8,20,.95) 100%);
+}
+.col-host-content{ position: relative; z-index: 1; }
+.col-host-content h2{ color: #fff; }
+.col-host-content p{ color: rgba(255,255,255,.85); }
+
 /* =========================================================
    Tracks
    ========================================================= */
@@ -269,11 +288,16 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 /* =========================================================
    Register
    ========================================================= */
-.register-inner{ display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; align-items: center; }
-.hero-visual-small{ display: flex; justify-content: center; }
-.fest-mark{ width: 100%; max-width: 320px; border-radius: 20px; }
-.register h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.register-card{ display: flex; flex-direction: column; align-items: flex-start; text-align: left; max-width: 640px; margin: 0 auto; }
+.fest-mark{ width: 96px; height: auto; border-radius: 16px; margin-bottom: 1.5rem; }
+.register h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top: .25rem; }
+.register-copy{ max-width: 52ch; }
+.register-action{ display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.75rem; }
+.register-cta{ display: flex; flex-direction: column; align-items: flex-start; }
 .register-fineprint{ font-family: var(--mono); font-size: .78rem; opacity: .55; margin-top: .75rem; }
+.register-qr{ display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+.register-qr img{ background: #fff; padding: .5rem; border-radius: .65rem; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.register-qr-caption{ font-family: var(--mono); font-size: .78rem; opacity: .65; }
 
 /* =========================================================
    FAQ
@@ -350,7 +374,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .tracks-grid{ grid-template-columns: 1fr; }
   .circuit{ grid-template-columns: 1fr; }
   .circuit-line{ display: none; }
-  .register-inner{ grid-template-columns: 1fr; text-align: left; }
+  .register-action{ flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .register-qr{ align-items: flex-start; }
   .contact-layout{ grid-template-columns: 1fr; }
   .contact-map{ min-height: 200px; }
 }
