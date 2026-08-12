@@ -39,7 +39,7 @@
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="https://forms.gle/nki73qEPTaR8pUsf8" target="_blank" rel="noopener" class="btn btn-pink nav-cta">Register</a>
+    <a href="#register" class="btn btn-pink nav-cta">Register</a>
     <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -67,7 +67,7 @@
     </p>
 
     <div class="hero-cta">
-      <a href="https://forms.gle/nki73qEPTaR8pUsf8" target="_blank" rel="noopener" class="btn btn-pink">Register your team</a>
+      <a href="#register" class="btn btn-pink">Register your team</a>
       <a href="#schedule" class="btn btn-ghost">See the schedule</a>
     </div>
 
@@ -126,19 +126,19 @@
     <div class="col">
       <p class="eyebrow eyebrow-dark">The global fest</p>
       <h2>Qiskit Fall Fest</h2>
-      
-     
     </div>
-    <div class="col">
-      <p class="eyebrow eyebrow-dark">The host</p>
-      <h2>DBATU, Lonere</h2>
-      <p>
-       Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, is proud to host Qiskit Fall Fest 2026 in Konkan for the first time. 
-        This edition brings together students, faculty members, and research scholars to explore the exciting world of quantum computing through a
-        hands-on workshop followed by a hackathon,
-        inspired by the Fall Fest format followed by universities around the world..
-      </p>
-     
+    <div class="col col-host">
+      <div class="col-host-overlay"></div>
+      <div class="col-host-content">
+        <p class="eyebrow eyebrow-dark">The host</p>
+        <h2>DBATU, Lonere</h2>
+        <p>
+          Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, is proud to host Qiskit Fall Fest 2026 in Konkan for the first time.
+          This edition brings together students, faculty members, and research scholars to explore the exciting world of quantum computing through a
+          hands-on workshop followed by a hackathon,
+          inspired by the Fall Fest format followed by universities around the world.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -260,24 +260,26 @@
 
 <!-- ================= REGISTER ================= -->
 <section class="section register" id="register">
-  <div class="section-inner register-inner">
-    <div class="hero-visual hero-visual-small" aria-hidden="true">
-      <img src="fall-fest-hero.webp" alt="" class="fest-mark">
-    </div>
-    <div>
-      <p class="eyebrow eyebrow-dark">Seats are limited</p>
-      <h2>Ready to collapse the wavefunction?</h2>
-      <p>
-        Registration is free and open to all DBATU students. Fill out the form below
-        to lock in your spot &mdash; individually for workshops, or as a team of
-        2&ndash;4 for the hackathon.
-      </p>
-      <a href="https://forms.gle/nki73qEPTaR8pUsf8" target="_blank" rel="noopener" class="btn btn-pink btn-lg">Open registration form</a>
-      <p class="register-fineprint">Or scan the QR code to open the form on your phone.</p>
-    </div>
-    <div class="register-qr">
-      <img src="register-qr.png" alt="QR code linking to the DBATU Qiskit Fall Fest registration form" width="180" height="180">
-      <p class="register-qr-caption">Scan to register</p>
+  <div class="section-inner register-card">
+    <img src="fall-fest-hero.webp" alt="" class="fest-mark" aria-hidden="true">
+
+    <p class="eyebrow eyebrow-dark">Seats are limited</p>
+    <h2>Ready to collapse the wavefunction?</h2>
+    <p class="register-copy">
+      Registration is free and open to all DBATU students. Fill out the form below
+      to lock in your spot &mdash; individually for workshops, or as a team of
+      2&ndash;4 for the hackathon.
+    </p>
+
+    <div class="register-action">
+      <div class="register-cta">
+        <a href="https://forms.gle/nki73qEPTaR8pUsf8" target="_blank" rel="noopener" class="btn btn-pink btn-lg">Open registration form</a>
+        <p class="register-fineprint">Or scan the QR code to open it on your phone.</p>
+      </div>
+      <div class="register-qr">
+        <img src="register-qr.png" alt="QR code linking to the DBATU Qiskit Fall Fest registration form" width="150" height="150">
+        <p class="register-qr-caption">Scan to register</p>
+      </div>
     </div>
   </div>
 </section>
