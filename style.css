@@ -110,18 +110,19 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 }
 .brand{ display: flex; align-items: center; gap: .75rem; margin-right: auto; }
 .brand-badge{
-  width: 70px; height: 70px; border-radius: 12px; flex-shrink: 0;
+  width: 88px; height: 88px; border-radius: 14px; flex-shrink: 0;
   background-color: #fff;
   background-image: url('fall-fest-hero.webp');
   background-repeat: no-repeat;
-  background-size: 147px 83px;
-  background-position: -18px -23px;
+  background-size: contain;
+  background-position: center;
+  padding: 6px;
 }
 .brand-crest{
-  width: 56px; height: 56px; border-radius: 10px; object-fit: contain;
-  background: #fff; padding: 4px; flex-shrink: 0;
+  width: 88px; height: 88px; border-radius: 12px; object-fit: contain;
+  background: #fff; padding: 6px; flex-shrink: 0;
 }
-.brand-divider{ width: 1px; height: 38px; background: var(--line-2); flex-shrink: 0; }
+.brand-divider{ width: 1px; height: 52px; background: var(--line-2); flex-shrink: 0; }
 .brand-text{ display: flex; flex-direction: column; line-height: 1.25; max-width: 320px; }
 .brand-text strong{ font-family: var(--display); font-size: .98rem; }
 .brand-text em{ font-style: normal; font-family: var(--mono); font-size: .68rem; color: var(--muted); }
@@ -288,7 +289,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
    Register
    ========================================================= */
 .register-card{ display: flex; flex-direction: column; align-items: flex-start; text-align: left; max-width: 640px; margin: 0 auto; }
-.fest-mark{ width: 96px; height: auto; border-radius: 16px; margin-bottom: 1.5rem; }
+.fest-mark{ width: 140px; height: auto; border-radius: 20px; margin-bottom: 1.5rem; }
 .register h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top: .25rem; }
 .register-copy{ max-width: 52ch; }
 .register-action{ display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.75rem; }
@@ -384,8 +385,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 @media (max-width: 720px){
   .brand-text em{ display: none; }
   .brand-divider{ display: none; }
-  .brand-badge, .brand-crest{ width: 44px; height: 44px; }
-  .brand-badge{ background-size: 124px 70px; background-position: -15px -20px; }
+  .brand-badge, .brand-crest{ width: 60px; height: 60px; padding: 5px; }
   .nav-links{
     position: absolute; top: 100%; left: 0; right: 0;
     background: var(--ink); border-bottom: 1px solid var(--line);
