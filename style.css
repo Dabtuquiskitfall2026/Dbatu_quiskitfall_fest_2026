@@ -110,7 +110,7 @@ p{ margin: 0 0 1em; color: var(--muted); max-width: 60ch; }
 }
 .brand{ display: flex; align-items: center; gap: .75rem; margin-right: auto; }
 .brand-badge{
-  width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;
+  width: 70px; height: 70px; border-radius: 12px; flex-shrink: 0;
   background-color: #fff;
   background-image: url('fall-fest-hero.webp');
   background-repeat: no-repeat;
